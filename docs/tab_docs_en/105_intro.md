@@ -21,4 +21,4 @@ Comet is a free-to-use open-source web development tool. What sets Comet apart i
 
 That sounds like a convenient way to transform the contents of a folder into a website on **your own website**. Editing and publishing to the internet are made easy, and there are plenty of simple and useful features available. With Flutter, you can start using it right away. Let's give it a try!
 
-<a href="/docs-jp/start" class='linkbutton'>Next Page</a>
+<a href="/docs/start" class='linkbutton'>Next Page</a>
