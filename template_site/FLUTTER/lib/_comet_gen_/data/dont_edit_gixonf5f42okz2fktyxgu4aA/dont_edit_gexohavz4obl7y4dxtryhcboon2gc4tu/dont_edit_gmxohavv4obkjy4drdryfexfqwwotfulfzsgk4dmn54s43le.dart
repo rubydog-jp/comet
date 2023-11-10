@@ -1,0 +1,48 @@
+// ignore_for_file: constant_identifier_names, file_names
+import 'package:comet/comet.dart';
+
+const dont_edit_gmxohavv4obkjy4drdryfexfqwwotfulfzsgk4dmn54s43le = CometGenPage(
+  srcName: '3.サイトを公開.deploy.md',
+  content: _content,
+);
+
+const _content = '''
+# サイトを公開
+
+Comet を使えばサイトの公開も簡単です
+
+1. まずは GitHub で専用のリポジトリを 1 つ作りましょう。
+
+[新規リポジトリを作成](https://github.com/new)
+
+<br />
+
+2. 次に GitHub の **ユーザー ID** と作成した **リポジトリ名** を `my_site/comet.yaml` に書きます
+
+```comet.yaml
+...
+github
+  user_id: ここにユーザーID
+  repository_name: ここにリポジトリ名
+```
+
+<br />
+
+3. my_site の中で コマンドを実行してください
+
+```
+\$ comet deploy
+```
+
+<br />
+
+4. もしセキュリティチェックをされたら回答します
+
+ユーザー ID を聞かれたら **ユーザー ID** を入力、  
+パスワードを聞かれたら **アクセストークン** を入力してください。
+
+<br />
+
+以上でサイトの公開は完了です。
+
+''';

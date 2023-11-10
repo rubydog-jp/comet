@@ -1,0 +1,18 @@
+import 'dart:io';
+import 'package:comet_cli/types/src.dart';
+
+Future<SrcPage> readSrcPage(String folderPath, String fileName) async {
+  final path = '$folderPath/$fileName';
+  return readSrcPageFullPath(path);
+}
+
+Future<SrcPage> readSrcPageFullPath(String path) async {
+  final file = File(path);
+  final content = file.readAsBytesSync();
+  final segments = path.split(Platform.pathSeparator);
+  final page = SrcPage(
+    name: segments.last,
+    content: content,
+  );
+  return page;
+}

@@ -1,0 +1,46 @@
+:root {
+  --ifm-color-primary: #002060;
+  --ifm-color-primary-dark: #002060;
+  --ifm-color-primary-darker: #002060;
+  --ifm-color-primary-darkest: #002060;
+  --ifm-color-primary-light: #002060;
+  --ifm-color-primary-lighter: #002060;
+  --ifm-color-primary-lightest: #002060;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] {
+  --ifm-color-primary: #6b9cff;
+  --ifm-color-primary-dark: #6b9cff;
+  --ifm-color-primary-darker: #6b9cff;
+  --ifm-color-primary-darkest: #6b9cff;
+  --ifm-color-primary-light: #6b9cff;
+  --ifm-color-primary-lighter: #6b9cff;
+  --ifm-color-primary-lightest: #6b9cff;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* ページ進む戻るを非表示 */
+.pagination-nav {
+  display: none;
+}
+
+/* リンク用ボタン */
+a.linkbutton {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  width: fit-content;
+  padding: 1rem;
+  font-weight: bold;
+  border: 2px solid #27acd9;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #27acd9;
+  transition: 0.5s;
+}
+a.linkbutton:hover {
+  color: #27acd9;
+  background: #fff;
+}

@@ -1,0 +1,48 @@
+// ignore_for_file: constant_identifier_names, file_names
+import 'package:comet/comet.dart';
+
+const dont_edit_gmxeizlqnrxxsltnmqAAAAAA = CometGenPage(
+  srcName: '3.Deploy.md',
+  content: _content,
+);
+
+const _content = '''
+# Deploy
+
+With Comet, publishing your site is also easy.
+
+1. Let's start by creating a dedicated repository on GitHub.
+
+[New Repository](https://github.com/new)
+
+<br />
+
+2. Next, write your GitHub **UserID** and the created **RepositoryName** in `my_site/comet.yaml` .
+
+```comet.yaml
+...
+github
+  user_id: YourUserID
+  repository_name: YourRepositoryName
+```
+
+<br />
+
+3. Run commands inside `my_site` .
+
+```
+\$ comet deploy
+```
+
+<br />
+
+4. Please respond if a security check is conducted.
+
+If asked for your UserID, enter your UserID.
+If asked for a Password, enter your AccessToken.
+
+<br />
+
+That's all done!
+
+''';

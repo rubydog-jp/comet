@@ -1,0 +1,23 @@
+#
+# Comet Docs
+# https://comet.rubydog.jp/
+#
+
+site:
+  title: MySite
+  icon: icon.png
+  copyright: "Copyright ©︎ 2023 MySite. Made with Comet 💫"
+
+flutter_project:
+  root: FLUTTER
+
+github:
+  user_id: null
+  repository_name: my_site
+
+fonts:
+  - url: "/jp/"
+    font: NotoSansJP
+
+ignore_folders:
+  - .git
