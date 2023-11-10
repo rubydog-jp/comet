@@ -11,6 +11,7 @@ const config = {
 
   url: "https://comet.rubydog.jp",
   baseUrl: "/",
+  trailingSlash: true,
 
   organizationName: "rubydog-jp",
   projectName: "comet",
