@@ -9,3 +9,7 @@
 ## 0.2.0
 
 - preview release
+
+## 0.2.1
+
+- fix: error 404 #28
