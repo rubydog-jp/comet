@@ -62,4 +62,4 @@ $ git config --global core.autocrlf false
 
 <br />
 
-<a href="/dev/deploy" class='linkbutton'>Back to the Docs</a>
+<a href="/docs/deploy" class='linkbutton'>Back to the Docs</a>

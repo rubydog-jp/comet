@@ -8,4 +8,4 @@ title: (MEMO) Flutter install
 You can install Flutter here.  
 https://docs.flutter.dev/get-started/install
 
-<a href="/dev/start" class='linkbutton'>Back to the Docs</a>
+<a href="/docs/start" class='linkbutton'>Back to the Docs</a>

@@ -16,7 +16,7 @@ function Header() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/start"
+            to="/docs/intro"
           >
             Meet Comet
           </Link>
