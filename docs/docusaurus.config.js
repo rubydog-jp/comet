@@ -91,13 +91,13 @@ const config = {
         items: [
           {
             label: "English",
-            to: "/docs/start",
+            to: "/docs/intro",
             position: "left",
             activeBaseRegex: "/docs/",
           },
           {
             label: "日本語",
-            to: "/docs-jp/start",
+            to: "/docs-jp/intro",
             position: "left",
             activeBaseRegex: "/docs-jp/",
           },

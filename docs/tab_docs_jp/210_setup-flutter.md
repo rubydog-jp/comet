@@ -8,4 +8,4 @@ title: (参考) Flutterの準備
 まだFlutterのインストールが終わっていない方はこちらの記事をご覧ください。  
 https://qiita.com/Rubydog/items/e3747d7f050ed7ead9bf
 
-<a href="/dev/start" class='linkbutton'>説明へ戻る</a>
+<a href="/docs-jp/start" class='linkbutton'>説明へ戻る</a>

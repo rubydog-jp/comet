@@ -66,4 +66,4 @@ $ git config --global core.autocrlf false
 
 <br />
 
-<a href="/dev/deploy" class='linkbutton'>説明へ戻る</a>
+<a href="/docs-jp/deploy" class='linkbutton'>説明へ戻る</a>
