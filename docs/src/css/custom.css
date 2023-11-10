@@ -26,6 +26,11 @@
   display: none;
 }
 
+/* スマホで見出しを非表示 */
+.theme-doc-toc-mobile {
+  display: none;
+}
+
 /* リンク用ボタン */
 a.linkbutton {
   display: block;
