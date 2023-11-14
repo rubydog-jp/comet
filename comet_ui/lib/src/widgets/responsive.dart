@@ -18,7 +18,7 @@ import 'package:flutter/material.dart';
 /// 画面サイズクラス
 enum ScreenSizeClass {
   /// スマホ
-  phone,
+  mobile,
 
   /// パソコン
   desktop,
@@ -35,7 +35,7 @@ const screenProvider = ScreenProvider(
   designHeight: 844,
   breakpoints: {
     ScreenSizeClass.unsupported: 0, // サポート対象外
-    ScreenSizeClass.phone: 300, // スマホ表示に必要な最低限の幅
+    ScreenSizeClass.mobile: 300, // スマホ表示に必要な最低限の幅
     ScreenSizeClass.desktop: 800, // デスクトップ表示に必要な最低限の幅
   },
 );

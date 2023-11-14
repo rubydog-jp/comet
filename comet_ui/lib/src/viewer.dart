@@ -33,9 +33,9 @@ class CometViewer extends StatelessWidget {
     final uiData = toUiData(cometData);
 
     // 状態を算出
-    final state = toUiState(pathParams, uiData);
+    final uiState = toUiState(pathParams, uiData);
 
-    if (state == null) {
+    if (uiState == null) {
       return CometNotFoundPage(cometData);
     }
 
@@ -48,36 +48,36 @@ class CometViewer extends StatelessWidget {
             return switch (sizeClass) {
               ScreenSizeClass.desktop => DesktopViewer(
                   data: uiData,
-                  state: state,
+                  state: uiState,
                   inlineWidgets: inlineWidgets,
                   onSelectShelf: (newValue) {
-                    final newState = selectShelf(newValue, state);
+                    final newState = selectShelf(newValue, uiState);
                     // 遷移先のページが見つからなければ何もしない
                     if (newState == null) return;
                     final urlPath = toUrlPath(newState);
                     GoRouter.of(context).go(urlPath);
                   },
                   onSelectBook: (newValue) {
-                    final newState = selectBook(newValue, state);
+                    final newState = selectBook(newValue, uiState);
                     // 遷移先のページが見つからなければ何もしない
                     if (newState == null) return;
                     final urlPath = toUrlPath(newState);
                     GoRouter.of(context).go(urlPath);
                   },
                   onSelectPage: (newValue) {
-                    final newState = selectPage(newValue, state);
+                    final newState = selectPage(newValue, uiState);
                     // 遷移先のページが見つからなければ何もしない
                     if (newState == null) return;
                     final urlPath = toUrlPath(newState);
                     GoRouter.of(context).go(urlPath);
                   },
                 ),
-              ScreenSizeClass.phone => MobileViewer(
+              ScreenSizeClass.mobile => MobileViewer(
                   data: uiData,
-                  state: state,
+                  state: uiState,
                   inlineWidgets: inlineWidgets,
                   onSelectShelf: (newValue) {
-                    final newState = selectShelf(newValue, state);
+                    final newState = selectShelf(newValue, uiState);
                     // 遷移先のページが見つからなければ何もしない
                     if (newState == null) return;
                     final urlPath = toUrlPath(newState);
@@ -87,7 +87,7 @@ class CometViewer extends StatelessWidget {
                     final newState = selectBookAndPage(
                       newBook,
                       newPage,
-                      state,
+                      uiState,
                     );
                     // 遷移先のページが見つからなければ何もしない
                     if (newState == null) return;
