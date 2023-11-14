@@ -1,10 +1,9 @@
+import 'package:comet/src/desktop/with_toc.dart';
 import 'package:flutter/material.dart';
 import 'package:comet/src/types/inline_widget.dart';
 import 'package:comet/src/types/state.dart';
 import 'package:comet/src/types/ui.dart';
-import 'package:comet/src/widgets/md.dart';
 import 'package:comet/src/desktop/menu.dart';
-import 'package:comet/src/widgets/responsive.dart';
 
 class WithMenuView extends StatelessWidget {
   const WithMenuView({
@@ -20,11 +19,7 @@ class WithMenuView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final screen = ScreenRef(context).watch(screenProvider);
-    final designW = screen.designW(280);
-
     return Row(
-      mainAxisAlignment: MainAxisAlignment.start,
       children: [
         SizedBox(
           width: 300,
@@ -38,31 +33,9 @@ class WithMenuView extends StatelessWidget {
           color: Colors.grey[300],
         ),
         Expanded(
-          child: MdView(
+          child: WithTocView(
             state: state,
             inlineWidgets: inlineWidgets,
-          ),
-        ),
-        SizedBox(
-          width: designW,
-          child: Column(
-            children: [
-              const SizedBox(height: 10),
-              Row(
-                children: [
-                  Container(
-                    width: 1,
-                    height: 120,
-                    color: Colors.grey[300],
-                  ),
-                  SizedBox(
-                    height: 120,
-                    child: Container(),
-                  ),
-                ],
-              ),
-              const Spacer(),
-            ],
           ),
         ),
       ],

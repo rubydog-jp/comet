@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:markdown/markdown.dart' as m;
 import 'package:markdown_widget/markdown_widget.dart';
 import 'package:flutter_highlighting/themes/a11y-dark.dart';
+import 'package:comet/src/widgets/markdown_widget.dart';
 import 'package:comet/src/html_support.dart/html_support.dart';
 import 'package:comet/src/types/state.dart';
 import 'package:comet/src/types/inline_widget.dart';
@@ -101,23 +102,40 @@ MarkdownGenerator createGenerator(CometInlineWidgets inlineWidgets) {
   );
 }
 
-class MdView extends StatelessWidget {
-  const MdView({
+class MdBodyView extends StatelessWidget {
+  const MdBodyView({
     super.key,
+    required this.tocController,
     required this.state,
     required this.inlineWidgets,
   });
 
+  final TocController? tocController;
   final UiState state;
   final CometInlineWidgets inlineWidgets;
 
   @override
   Widget build(BuildContext context) {
-    return MarkdownWidget(
+    return CustomMarkdownWidget(
       padding: const EdgeInsets.all(12),
+      tocController: tocController,
       data: state.selectedPage.content,
+      markdownGenerator: createGenerator(inlineWidgets),
       config: MarkdownConfig(
         configs: [
+          CodeConfig(
+            style: TextStyle(
+              color: Colors.green[600],
+              fontWeight: FontWeight.bold,
+              fontFamily: GoogleFonts.jetBrainsMono().fontFamily,
+              background: Paint()
+                ..color = const Color.fromARGB(255, 248, 255, 240)
+                ..strokeWidth = 5
+                ..strokeJoin = StrokeJoin.round
+                ..strokeCap = StrokeCap.round
+                ..style = PaintingStyle.stroke,
+            ),
+          ),
           TableConfig(
             border: TableBorder.all(
               borderRadius: const BorderRadius.all(Radius.circular(2)),
@@ -138,7 +156,6 @@ class MdView extends StatelessWidget {
           ),
         ],
       ),
-      markdownGenerator: createGenerator(inlineWidgets),
     );
   }
 }
