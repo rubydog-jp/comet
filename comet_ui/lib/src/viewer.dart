@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:comet/src/widgets/not_found.dart';
 import 'package:comet/src/types/gen.dart';
 import 'package:comet/src/types/inline_widget.dart';
@@ -14,6 +13,7 @@ import 'package:comet/src/mobile/viewer.dart';
 import 'package:comet/src/logic/to_url_path.dart';
 import 'package:comet/src/desktop/viewer.dart';
 import 'package:comet/src/widgets/responsive.dart';
+import 'package:comet/src/widgets/google_fonts_loading.dart';
 
 class CometViewer extends StatelessWidget {
   const CometViewer({
@@ -39,11 +39,9 @@ class CometViewer extends StatelessWidget {
       return CometNotFoundPage(cometData);
     }
 
-    return Theme(
-      data: Theme.of(context).copyWith(
-        // MEMO: 今後のアップデートでフォント対応
-        textTheme: GoogleFonts.notoSansJpTextTheme(),
-      ),
+    return GoogleFontsLoading(
+      // MEMO: 今後のアップデートでフォント指定
+      fontFamily: 'Noto Sans JP',
       child: Scaffold(
         body: ResponsiveView(
           builder: (sizeClass) {
