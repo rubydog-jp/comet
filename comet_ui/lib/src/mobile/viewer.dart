@@ -3,7 +3,7 @@ import 'package:comet/src/mobile/drawer.dart';
 import 'package:comet/src/types/state.dart';
 import 'package:comet/src/widgets/footer.dart';
 import 'package:comet/src/types/inline_widget.dart';
-import 'package:comet/src/widgets/md.dart';
+import 'package:comet/src/widgets/md_body.dart';
 import 'package:comet/src/theme.dart';
 import 'package:comet/src/types/ui.dart';
 
@@ -45,7 +45,8 @@ class MobileViewer extends StatelessWidget {
         children: [
           SizedBox(
             height: bodyHeight,
-            child: MdView(
+            child: MdBodyView(
+              tocController: null,
               state: state,
               inlineWidgets: inlineWidgets,
             ),
