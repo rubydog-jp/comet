@@ -31,13 +31,13 @@ class MenuDrawer extends StatelessWidget {
             state.selectedShelf.books.length,
             (bookIdx) {
               final book = state.selectedShelf.books[bookIdx];
-              final bookIsSelected = state.selectedBook.urlSeg == book.urlSeg;
+              final bookIsSelected = state.selectedBook?.urlSeg == book.urlSeg;
               final items = List.generate(
                 book.pages.length,
                 (pageIdx) {
                   final page = book.pages[pageIdx];
                   final pageIsSelected =
-                      state.selectedPage.urlSeg == page.urlSeg;
+                      state.selectedPage?.urlSeg == page.urlSeg;
                   final isSelected = bookIsSelected && pageIsSelected;
                   return ListTile(
                     tileColor: isSelected ? Colors.grey[300] : null,

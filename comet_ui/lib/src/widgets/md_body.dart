@@ -119,7 +119,7 @@ class MdBodyView extends StatelessWidget {
     return CustomMarkdownWidget(
       padding: const EdgeInsets.all(12),
       tocController: tocController,
-      data: state.selectedPage.content,
+      data: state.selectedPage?.content ?? '',
       markdownGenerator: createGenerator(inlineWidgets),
       config: MarkdownConfig(
         configs: [

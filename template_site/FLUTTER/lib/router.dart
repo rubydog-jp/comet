@@ -5,7 +5,7 @@ import 'package:site/widgets.dart';
 final cometRouter = CometRouter(
   initialLocation: cometInitialLocation(cometData),
   routes: [
-    CometViewerRoute(
+    ...cometRoutes(
       cometData: cometData,
       inlineWidgets: inlineWidgets,
     ),

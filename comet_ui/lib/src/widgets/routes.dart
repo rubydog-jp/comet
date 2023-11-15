@@ -15,7 +15,7 @@ class CometViewerRoute extends GoRoute {
     required CometInlineWidgets inlineWidgets,
   }) {
     return CometViewerRoute._(
-      path: cometViewerPath,
+      path: cometPagePath,
       builder: (_, state) {
         return CometViewer(
           pathParams: state.pathParameters,
@@ -25,4 +25,45 @@ class CometViewerRoute extends GoRoute {
       },
     );
   }
+}
+
+List<GoRoute> cometRoutes({
+  required CometGenData cometData,
+  required CometInlineWidgets inlineWidgets,
+}) {
+  return [
+    // URL: /shelf
+    CometViewerRoute._(
+      path: cometShelfPath,
+      builder: (_, state) {
+        return CometViewer(
+          pathParams: state.pathParameters,
+          cometData: cometData,
+          inlineWidgets: inlineWidgets,
+        );
+      },
+    ),
+    // URL: /shelf/book
+    CometViewerRoute._(
+      path: cometBookPath,
+      builder: (_, state) {
+        return CometViewer(
+          pathParams: state.pathParameters,
+          cometData: cometData,
+          inlineWidgets: inlineWidgets,
+        );
+      },
+    ),
+    // URL: /shelf/book/page
+    CometViewerRoute._(
+      path: cometPagePath,
+      builder: (_, state) {
+        return CometViewer(
+          pathParams: state.pathParameters,
+          cometData: cometData,
+          inlineWidgets: inlineWidgets,
+        );
+      },
+    ),
+  ];
 }

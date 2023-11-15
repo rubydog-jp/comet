@@ -16,12 +16,12 @@ class MenuView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final items = List.generate(
-      state.selectedBook.pages.length,
+      state.selectedBook?.pages.length ?? 0,
       (index) {
-        final page = state.selectedBook.pages[index];
+        final page = state.selectedBook?.pages[index];
         return MenuItem(
-          page: state.selectedBook.pages[index],
-          isSelected: state.selectedPage.urlSeg == page.urlSeg,
+          page: page!,
+          isSelected: state.selectedPage?.urlSeg == page.urlSeg,
           onTap: () => onSelectPage(page),
         );
       },
