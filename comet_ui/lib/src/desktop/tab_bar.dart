@@ -30,7 +30,7 @@ class CometTabBar extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 12),
           child: TabItem(
             book: book,
-            isSelected: state.selectedBook.urlSeg == book.urlSeg,
+            isSelected: state.selectedBook?.urlSeg == book.urlSeg,
             onTap: () => onSelectBook(book),
           ),
         );
