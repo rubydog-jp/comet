@@ -2,6 +2,7 @@ import 'package:args/args.dart';
 import 'package:comet_cli/commands/deploy.dart';
 import 'package:comet_cli/utils/progress_star.dart';
 
+/// parser for deploy
 class DeployRouter {
   Future<void> run(
     ArgParser parser,

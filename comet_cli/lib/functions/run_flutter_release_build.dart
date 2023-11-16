@@ -1,5 +1,6 @@
 import 'package:comet_cli/functions/run_flutter.dart';
 
+/// flutter build --release
 Future<void> runFlutterReleaseBuild(
   String project,
   String repoName,

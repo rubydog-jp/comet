@@ -5,6 +5,7 @@ import 'package:comet_cli/functions/to_raw_page.dart';
 import 'package:comet_cli/types/raw.dart';
 import 'package:comet_cli/types/src.dart';
 
+/// convert src book to dart code
 RawBook toRawBook(SrcBook srcBook, String shelfFolderPath) {
   // Book: src --> raw
   final codeName = toCodeName(srcBook.name);

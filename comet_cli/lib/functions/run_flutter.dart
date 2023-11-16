@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:comet_cli/utils/can_use_command.dart';
 
+/// wrapper for flutter commands
 Future<Process> runFlutter(
   String projectPath,
   List<String> args, {

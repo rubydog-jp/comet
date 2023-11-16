@@ -2,6 +2,7 @@ import 'package:args/args.dart';
 import 'package:comet_cli/commands/clean.dart';
 import 'package:comet_cli/utils/progress_star.dart';
 
+/// parser for clean
 class CleanRouter {
   Future<void> run(
     ArgParser parser,

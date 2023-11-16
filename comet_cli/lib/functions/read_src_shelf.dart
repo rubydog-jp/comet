@@ -3,6 +3,7 @@ import 'package:comet_cli/functions/read_src_book.dart';
 import 'package:comet_cli/types/src.dart';
 import 'package:comet_cli/types/yaml.dart';
 
+/// read src shelf
 Future<SrcShelf> readSrcShelf(CometYaml cometYaml, String folderName) async {
   final bookFolders = await readSubFolderNames(folderName);
 

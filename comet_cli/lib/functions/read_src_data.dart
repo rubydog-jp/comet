@@ -3,6 +3,7 @@ import 'package:comet_cli/functions/resolve_src_shelves.dart';
 import 'package:comet_cli/types/src.dart';
 import 'package:comet_cli/types/yaml.dart';
 
+/// read src data
 Future<SrcData> readSrcData(CometYaml cometYaml) async {
   final folders = await resolveSrcShelves(cometYaml);
   final List<SrcShelf> shelves = [];

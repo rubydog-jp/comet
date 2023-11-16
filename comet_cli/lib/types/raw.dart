@@ -1,3 +1,4 @@
+/// RawData
 class RawData {
   const RawData({
     required this.shelves,
@@ -11,6 +12,7 @@ class RawData {
   final String filePath;
 }
 
+/// RawShelf
 class RawShelf {
   const RawShelf({
     required this.books,
@@ -24,6 +26,7 @@ class RawShelf {
   final String filePath;
 }
 
+/// RawBook
 class RawBook {
   const RawBook({
     required this.pages,
@@ -37,6 +40,7 @@ class RawBook {
   final String filePath;
 }
 
+/// RawPage
 class RawPage {
   const RawPage({
     required this.fileContent,

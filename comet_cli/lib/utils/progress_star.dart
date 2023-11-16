@@ -1,8 +1,10 @@
 import 'dart:async';
 import 'dart:io';
 
+/// message for stop progress
 const _defaultStopMessage = '---* Completed.';
 
+/// A custom progress indicator
 class ProgressStar {
   static const _items = [
     '[        ]',
@@ -63,6 +65,7 @@ class ProgressStar {
   }
 }
 
+/// An other custom progress indicator
 class _BlinkStar {
   static const _items = [
     '[ * * *  ]',

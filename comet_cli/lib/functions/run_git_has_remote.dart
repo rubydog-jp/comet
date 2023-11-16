@@ -1,6 +1,6 @@
 import 'dart:io';
 
-// リモートリポジトリが接続されているかどうか
+/// if git has remote repo ir not
 Future<bool> runGitHasRemote() async {
   final result = await Process.run(
     'git',

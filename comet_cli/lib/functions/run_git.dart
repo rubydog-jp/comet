@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:comet_cli/utils/can_use_command.dart';
 
+/// wrapper for git commands
 Future<Process> runGit(
   List<String> args, {
   void Function(String msg)? onStdout,

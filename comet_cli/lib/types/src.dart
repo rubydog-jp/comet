@@ -1,5 +1,6 @@
 import 'dart:typed_data';
 
+/// SrcData
 class SrcData {
   const SrcData({
     required this.shelves,
@@ -7,6 +8,7 @@ class SrcData {
   final List<SrcShelf> shelves;
 }
 
+/// SrcShelf
 class SrcShelf {
   const SrcShelf({
     required this.name,
@@ -16,6 +18,7 @@ class SrcShelf {
   final List<SrcBook> books;
 }
 
+/// SrcBook
 class SrcBook {
   const SrcBook({
     required this.name,
@@ -25,6 +28,7 @@ class SrcBook {
   final List<SrcPage> pages;
 }
 
+/// SrcPage
 class SrcPage {
   const SrcPage({
     required this.name,

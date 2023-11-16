@@ -9,6 +9,7 @@ import 'package:comet_cli/commands/help.dart';
 import 'package:comet_cli/commands/version.dart';
 import 'package:comet_cli/router/upgrade.dart';
 
+/// parser for main command
 class Router {
   Future<void> run(List<String> arguments) async {
     final parser = ArgParser();

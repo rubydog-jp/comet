@@ -10,6 +10,7 @@ import 'package:comet_cli/functions/run_git_is_git_dir.dart';
 import 'package:comet_cli/functions/run_git_push_gh_branch.dart';
 import 'package:comet_cli/utils/progress_star.dart';
 
+/// process of deploy
 Future<void> deploy({
   required bool noPush,
 }) async {

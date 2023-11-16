@@ -2,6 +2,7 @@ import 'dart:io';
 import 'package:archive/archive.dart';
 import 'package:comet_cli/config.dart';
 
+/// unzip
 Future<void> unzip(List<int> bytes, String outputFolderName) async {
   // bytes --> zip
   final decoder = ZipDecoder();

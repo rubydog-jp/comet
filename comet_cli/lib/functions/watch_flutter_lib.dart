@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:watcher/watcher.dart';
 
+/// watch FLUTTER/lib/..
 void watchFlutterLib(
   String flutterProject, {
   required void Function(String path) onEdit,

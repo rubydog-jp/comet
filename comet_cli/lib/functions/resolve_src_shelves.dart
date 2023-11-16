@@ -1,7 +1,7 @@
 import 'package:comet_cli/utils/read_sub_folder_names.dart';
 import 'package:comet_cli/types/yaml.dart';
 
-/// 対象のフォルダを決める
+/// determin the src targets
 Future<List<String>> resolveSrcShelves(CometYaml cometYaml) async {
   final folders = await readSubFolderNamesCurrent();
   // ignore FLUTTER project

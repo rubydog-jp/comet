@@ -6,6 +6,7 @@ import 'package:comet_cli/types/raw.dart';
 import 'package:comet_cli/types/src.dart';
 import 'package:comet_cli/types/yaml.dart';
 
+/// Src --> Raw
 RawShelf toRawShelf(
   SrcShelf srcShelf,
   String dataFolderPath,

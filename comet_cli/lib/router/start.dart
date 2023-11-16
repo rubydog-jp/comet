@@ -3,6 +3,7 @@ import 'package:args/args.dart';
 import 'package:comet_cli/commands/start.dart';
 import 'package:comet_cli/utils/progress_star.dart';
 
+/// parser for start
 class StartRouter {
   Future<void> run(
     ArgParser parser,

@@ -1,6 +1,7 @@
 import 'package:comet_cli/functions/code_name.dart';
 import 'package:comet_cli/types/src.dart';
 
+/// convert src book to dart code
 String toDartBook(SrcBook srcBook) {
   final importBuf = StringBuffer();
   final pagesBuf = StringBuffer();

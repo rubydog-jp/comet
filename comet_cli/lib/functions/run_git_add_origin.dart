@@ -1,7 +1,7 @@
 import 'dart:io';
-
 import 'package:comet_cli/functions/run_git.dart';
 
+/// git remote add origin
 Future<void> runGitAddOrigin(String userId, String repoName) async {
   final process = await runGit(
     [

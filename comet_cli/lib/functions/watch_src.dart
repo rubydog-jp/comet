@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:io';
 import 'package:watcher/watcher.dart';
 
+/// watch src files
 List<StreamSubscription<WatchEvent>> watchSrc(
   List<String> folders, {
   required void Function(String srcPath) onEditPage,

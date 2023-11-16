@@ -1,3 +1,4 @@
+/// create an new commit message
 String getCommitMsg() {
   final now = DateTime.now();
   final epoch = now.millisecondsSinceEpoch;

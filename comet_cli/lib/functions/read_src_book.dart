@@ -3,6 +3,7 @@ import 'package:comet_cli/utils/read_sub_file_names.dart';
 import 'package:comet_cli/functions/read_src_page.dart';
 import 'package:comet_cli/types/src.dart';
 
+/// read src book
 Future<SrcBook> readSrcBook(String folderPath, String folderName) async {
   final path = '$folderPath/$folderName';
 

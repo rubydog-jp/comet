@@ -9,6 +9,7 @@ import 'package:comet_cli/functions/resolve_src_shelves.dart';
 import 'package:comet_cli/functions/run_flutter_run.dart';
 import 'package:comet_cli/functions/watch_src.dart';
 
+/// process of start
 Future<void> start() async {
   // Cometプロジェクトかどうか
   final cometYaml = readCometYaml();
