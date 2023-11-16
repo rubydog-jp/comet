@@ -3,6 +3,7 @@ import 'package:comet_cli/functions/git_library.dart';
 import 'package:path/path.dart' as path;
 import 'package:comet_cli/config.dart';
 
+/// git commit (to gh-pages banch)
 Future<void> runGitCommitGhBranch({
   required String flutterProject,
 }) async {

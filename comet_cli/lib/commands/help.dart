@@ -1,5 +1,6 @@
 import 'dart:io';
 
+/// process of help
 Future<void> showHelp() async {
   print('');
   print('  --help       Show usage information');

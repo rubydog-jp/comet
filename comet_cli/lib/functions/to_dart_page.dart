@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'package:comet_cli/functions/code_name.dart';
 import 'package:comet_cli/types/src.dart';
 
+/// convert src page to dart code
 String toDartPage(SrcPage srcPage) {
   final rawMarkdown = utf8.decode(srcPage.content);
   final escapedMarkdown = _escapeForDart(rawMarkdown);

@@ -4,6 +4,7 @@ import 'package:comet_cli/functions/run_flutter_clean.dart';
 import 'package:comet_cli/functions/run_flutter_pub_get.dart';
 import 'package:comet_cli/utils/progress_star.dart';
 
+/// process of clean
 Future<void> clean() async {
   // Cometプロジェクトかどうか
   final cometYaml = readCometYaml();

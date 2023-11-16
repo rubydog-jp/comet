@@ -2,6 +2,7 @@ import 'package:comet_cli/functions/code_name.dart';
 import 'package:comet_cli/types/src.dart';
 import 'package:comet_cli/types/yaml.dart';
 
+/// convert src shelf to dart code
 String toDartShelf(SrcShelf srcShelf, CometYaml cometYaml) {
   final importBuf = StringBuffer();
   final booksBuf = StringBuffer();

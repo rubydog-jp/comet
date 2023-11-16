@@ -6,6 +6,7 @@ import 'package:comet_cli/functions/read_yaml.dart';
 import 'package:comet_cli/utils/progress_star.dart';
 import 'package:comet_cli/functions/write_gen_data.dart';
 
+/// process of build
 Future<void> build() async {
   // Cometプロジェクトかどうか
   final cometYaml = readCometYaml();

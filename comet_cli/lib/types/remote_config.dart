@@ -1,3 +1,4 @@
+/// RemoteConfig
 class RemoteConfig {
   const RemoteConfig({
     required this.minCliVer,

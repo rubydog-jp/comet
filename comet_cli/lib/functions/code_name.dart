@@ -5,6 +5,7 @@ import 'dart:typed_data';
 const _prefix = 'dont_edit_';
 const _escape = 'A';
 
+/// convert to the code-name
 String toCodeName(String str) {
   final bytes = utf8.encode(str);
   final typedBytes = Uint8List.fromList(bytes);
@@ -15,6 +16,7 @@ String toCodeName(String str) {
   return escaped;
 }
 
+/// convert from the code-name
 String fromCodeName(String str) {
   final nonEscaped = str.replaceAll(_escape, '=');
   final prefixRemoved = nonEscaped.replaceFirst(_prefix, '');

@@ -3,6 +3,7 @@ import 'package:comet_cli/config.dart';
 import 'package:comet_cli/types/yaml.dart';
 import 'package:yaml/yaml.dart';
 
+/// read comet.yaml
 CometYaml? readCometYaml({
   String path = '',
 }) {

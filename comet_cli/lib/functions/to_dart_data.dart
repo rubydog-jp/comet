@@ -3,6 +3,7 @@ import 'package:comet_cli/config.dart';
 import 'package:comet_cli/types/src.dart';
 import 'package:comet_cli/types/yaml.dart';
 
+/// convert src data to dart code
 String toDartData(SrcData srcData, CometYaml cometYaml) {
   final importBuf = StringBuffer();
   final shelvesBuf = StringBuffer();

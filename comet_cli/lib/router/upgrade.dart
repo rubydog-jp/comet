@@ -2,6 +2,7 @@ import 'package:args/args.dart';
 import 'package:comet_cli/commands/upgrade.dart';
 import 'package:comet_cli/utils/progress_star.dart';
 
+/// parser for upgrade
 class UpgradeRouter {
   Future<void> run(
     ArgParser parser,

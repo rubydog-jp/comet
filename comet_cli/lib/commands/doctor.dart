@@ -1,7 +1,8 @@
 import 'package:comet_cli/config.dart';
 import 'package:comet_cli/functions/read_yaml.dart';
 
-Future<void> callDoctor() async {
+/// process of doctor
+Future<void> doctor() async {
   final yaml = readCometYaml();
   if (yaml == null) {
     print('Not found $cometYamlName');

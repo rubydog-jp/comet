@@ -1,3 +1,4 @@
+/// typed data for comet.yaml
 class CometYaml {
   const CometYaml({
     required this.site,

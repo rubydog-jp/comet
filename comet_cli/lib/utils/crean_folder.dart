@@ -1,5 +1,6 @@
 import 'dart:io';
 
+/// clean files in folders
 void cleanFolder(String folderPath) {
   final folder = Directory(folderPath);
   final folderExists = folder.existsSync();

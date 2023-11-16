@@ -3,6 +3,7 @@ import 'package:comet_cli/utils/write_file.dart';
 import 'package:comet_cli/utils/write_folder.dart';
 import 'package:comet_cli/functions/write_gen_book.dart';
 
+/// write gen files
 Future<void> writeGenShelf(RawShelf rawShelf) async {
   // Folder
   writeFolder(rawShelf.folderPath);

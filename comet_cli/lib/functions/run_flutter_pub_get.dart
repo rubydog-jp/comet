@@ -1,5 +1,6 @@
 import 'package:comet_cli/functions/run_flutter.dart';
 
+/// flutter pub get
 Future<void> runFlutterPubGet(
   String project,
 ) async {

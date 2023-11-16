@@ -2,6 +2,7 @@ import 'dart:io';
 import 'package:comet_cli/config.dart';
 import 'package:comet_cli/functions/run_git.dart';
 
+/// git push
 Future<void> runGitPushGhBranch() async {
   final process = await runGit(
     [

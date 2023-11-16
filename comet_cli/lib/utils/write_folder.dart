@@ -1,5 +1,6 @@
 import 'dart:io';
 
+/// make a folder
 void writeFolder(String path) {
   final newFolder = Directory(path);
   final alreadyExists = newFolder.existsSync();

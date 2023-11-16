@@ -1,9 +1,13 @@
 import 'dart:io';
 import 'package:comet_cli/functions/run_git.dart';
 
+/// branch name
 const _initialBranch = 'main';
+
+/// imitial commit message
 const _initialCommitMsg = 'init by Comet';
 
+/// git init
 Future<void> runGitInit() async {
   final process = await runGit(
     [

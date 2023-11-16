@@ -1,5 +1,6 @@
 import 'package:comet_cli/functions/run_git.dart';
 
+/// check if here is git repo
 Future<bool> runGitIsGitDir() async {
   final process = await runGit(
     const [

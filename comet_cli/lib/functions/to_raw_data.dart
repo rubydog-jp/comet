@@ -5,7 +5,7 @@ import 'package:comet_cli/types/raw.dart';
 import 'package:comet_cli/types/src.dart';
 import 'package:comet_cli/types/yaml.dart';
 
-// Src --> Raw
+/// Src --> Raw
 RawData toRawData(SrcData srcData, CometYaml cometYaml) {
   final folderPath =
       '${cometYaml.flutterProject.root}/$genRoot/$genDataFolderName';

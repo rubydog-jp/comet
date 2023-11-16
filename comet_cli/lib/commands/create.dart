@@ -7,6 +7,7 @@ import 'package:comet_cli/utils/download_zip.dart';
 import 'package:comet_cli/utils/progress_star.dart';
 import 'package:comet_cli/utils/unzip.dart';
 
+/// process of create
 Future<void> create(String projectName) async {
   ProgressStar.start('download template..');
   late final List<int> template;

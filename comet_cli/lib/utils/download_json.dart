@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
+/// download json
 Future<Map<String, dynamic>> downloadJson(String urlString) async {
   const timeout = Duration(seconds: 5);
   final url = Uri.parse(urlString);
