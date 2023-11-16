@@ -13,46 +13,32 @@ class Router {
   Future<void> run(List<String> arguments) async {
     final parser = ArgParser();
     // --help, -h を登録
-    parser.addFlag('help', abbr: 'h', help: 'Show usage information');
+    parser.addFlag('help', abbr: 'h');
     // --version, -v を登録
-    parser.addFlag('version', abbr: 'v', help: 'Show version number');
+    parser.addFlag('version', abbr: 'v');
 
     // サブコマンド deploy を登録
     final deployParser = parser.addCommand('deploy');
-    // deploy に --help, -h を登録
-    deployParser.addFlag('help', abbr: 'h', help: 'Show usage information');
     // deploy に --no-push を登録
     deployParser.addFlag('no-push', help: 'disable auto deploy');
 
     // サブコマンド create を登録
     final createParser = parser.addCommand('create');
-    // create に --help, -h を登録
-    createParser.addFlag('help', abbr: 'h', help: 'Show usage information');
 
     // サブコマンド doctor を登録
     final doctorParser = parser.addCommand('doctor');
-    // doctor に --help, -h を登録
-    doctorParser.addFlag('help', abbr: 'h', help: 'Show usage information');
 
     // サブコマンド start を登録
     final startParser = parser.addCommand('start');
-    // start に --help, -h を登録
-    startParser.addFlag('help', abbr: 'h', help: 'Show usage information');
 
     // サブコマンド build を登録
     final buildParser = parser.addCommand('build');
-    // build に --help, -h を登録
-    buildParser.addFlag('help', abbr: 'h', help: 'Show usage information');
 
     // サブコマンド clean を登録
     final cleanParser = parser.addCommand('clean');
-    // clean に --help, -h を登録
-    cleanParser.addFlag('help', abbr: 'h', help: 'Show usage information');
 
     // サブコマンド upgrade を登録
     final upgradeParser = parser.addCommand('upgrade');
-    // upgrade に --help, -h を登録
-    upgradeParser.addFlag('help', abbr: 'h', help: 'Show usage information');
 
     /* START PARSE */
 
