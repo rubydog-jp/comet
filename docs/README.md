@@ -36,6 +36,16 @@ dart pub global list
 $ GIT_USER=xxxxx DEPLOYMENT_BRANCH=gh-pages npm run deploy
 ```
 
+### comet_cli
+
+- lib内のバージョン書き換え
+- pubspecのバージョン書き換え
+- CHANGELOG.md
+
+```
+flutter pub publish
+```
+
 ### comet_ui
 
 - pubspecのバージョン書き換え
@@ -63,14 +73,4 @@ https://github.com/rubydog-jp/comet/releases/new
 
 # リモートConfigを書き換える
 remote_config/remote-config.json
-```
-
-### comet_cli
-
-- lib内のバージョン書き換え
-- pubspecのバージョン書き換え
-- CHANGELOG.md
-
-```
-flutter pub publish
 ```
