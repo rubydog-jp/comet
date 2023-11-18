@@ -2,7 +2,7 @@
 const cometYamlName = 'comet.yaml';
 
 /// version
-const version = '0.2.0';
+const version = '0.3.0';
 
 /// remoteConfigUrl
 const remoteConfigUrl =
