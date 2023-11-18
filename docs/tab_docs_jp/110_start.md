@@ -39,3 +39,15 @@ $ comet start
 ```
 
 <br />
+
+# 4. あなたのサイトが完成しました
+
+- データは全てあなたのものです `my_site` フォルダを覗いてみましょう
+- GitHubを使ってすぐに一般公開することができます
+- 編集も簡単、メモ帳アプリがあれば十分です
+
+![gif](/dev/v0_3-jp.gif)
+
+<br />
+
+<a href="/docs-jp/deploy" class='linkbutton'>次のページへ</a>

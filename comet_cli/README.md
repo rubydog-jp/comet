@@ -18,3 +18,5 @@ $ comet create my_site
 $ cd my_site
 $ comet start
 ```
+
+🎉 Contributions, Questions, Issues are welcomed!

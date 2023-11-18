@@ -12,7 +12,7 @@ Let's modify these files.
 
 <br />
 
-### Check on local browser
+### Check on your PC
 
 ```
 $ comet start
@@ -20,7 +20,7 @@ $ comet start
 
 <br />
 
-### Publish
+### Publish (again)
 
 ```
 $ comet deploy

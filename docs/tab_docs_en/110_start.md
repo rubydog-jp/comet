@@ -39,3 +39,15 @@ $ comet start
 ```
 
 <br />
+
+# 4. Your website is ready!
+
+- All data is yours. See in `my_site` folder.
+- You can quickly make it public using GitHub.
+- Editing is easy, just use a simple text editor.
+
+![gif](/dev/v0_3-en.gif)
+
+<br />
+
+<a href="/docs/deploy" class='linkbutton'>Next Page</a>
