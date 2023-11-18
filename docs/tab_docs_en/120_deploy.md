@@ -61,3 +61,5 @@ https://YOUR_USER_ID.github.io/YOUR_REPOSITORY_NAME/
 ```
 
 <br />
+
+<a href="/docs/edit" class='linkbutton'>Next Page</a>

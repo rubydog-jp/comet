@@ -62,3 +62,5 @@ in markdown, you can write like `{{MyWidget}}` to show any Flutter widget.
 
 See more docs  
 https://comet.rubydog.jp/
+
+🎉 Contributions, Questions, Issues are welcomed!

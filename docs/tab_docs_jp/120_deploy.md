@@ -62,3 +62,5 @@ https://<ユーザーID>.github.io/my_site/
 ```
 
 <br />
+
+<a href="/docs-jp/edit" class='linkbutton'>次のページへ</a>
