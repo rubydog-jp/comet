@@ -1,6 +1,6 @@
 name: comet
 description: UI Library for comet project.
-version: 0.2.1
+version: 0.3.0
 repository: https://github.com/rubydog-jp/comet
 
 environment:
