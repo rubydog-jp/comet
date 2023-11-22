@@ -1,6 +1,6 @@
 name: comet_cli
 description: A command-line interface for comet project. Static Site Generator made with Flutter.
-version: 0.3.0
+version: 0.3.1
 repository: https://github.com/rubydog-jp/comet
 
 executables:

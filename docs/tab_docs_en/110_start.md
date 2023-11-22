@@ -29,6 +29,30 @@ Please name your project like `my_site`.
 $ comet create my_site
 ```
 
+:::caution 【important】PATH
+
+If you are using Dart commands for the first time, you will need a path.
+
+- Mac
+
+```
+export PATH="$PATH":"$HOME/.pub-cache/bin"
+```
+
+- Windows
+
+```
+%LOCALAPPDATA%\Pub\Cache\bin
+```
+
+If you cannot pass the path, please add `dart pub global run comet_cli:` before the following `comet` commands.
+
+```
+$ dart pub global run comet_cli:comet create my_site
+```
+
+:::
+
 <br />
 
 # 3. See your site on local browser

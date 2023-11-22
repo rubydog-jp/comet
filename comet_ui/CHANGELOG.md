@@ -21,3 +21,7 @@
 - update: improve docs
 - update: code block color theme
 - fix: unnecessary rendering during font loading
+
+## 0.3.1
+
+- update: docs
