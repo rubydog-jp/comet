@@ -29,6 +29,32 @@ $ dart pub global activate comet_cli
 $ comet create my_site
 ```
 
+:::caution 【重要】パスを通す
+
+Dart製のコマンドを初めて使う人はパスが必要です
+
+- Mac
+
+```
+export PATH="$PATH":"$HOME/.pub-cache/bin"
+```
+
+- Windows
+
+```
+%LOCALAPPDATA%\Pub\Cache\bin
+```
+
+もしもパスが通せないときは以降の `comet` コマンドの前に `dart pub global run comet_cli:` をつけて実行してください。
+
+```
+$ dart pub global run comet_cli:comet create my_site
+```
+
+のようになります。
+
+:::
+
 <br />
 
 # 3. ローカルでサイトを確認
